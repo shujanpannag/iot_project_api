@@ -1,10 +1,10 @@
 # IOT PROJECT API
 This is a REST API built for IOT project using Golang, Gin and Gorm.
-## Requirements :
+## Requirements
 - Golang
 - Go Gin
 - Gorm
-## Environment variables :
+## Environment variables
 - HOST : Hostname
 - DBPORT : PostgreSQl Server Port
 - DBUSER : Database User Name
