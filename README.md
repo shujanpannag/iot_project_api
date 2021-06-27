@@ -14,13 +14,18 @@ This is a REST API built for IOT project using Golang, Gin and Gorm.
 - EMAIL_PSWD : From Email Password
 - EMAIL_HOST : SMTP Host
 - EMAIL_PORT : SMTP Port
-## Install
+## Build app binary
 ```bash
-    $ go build
+    $ go build -ldflags="-w -s" -o iot_api cmd/main.go
 ```
 ## Run the app
 ```bash
     $ go run cmd/main.go
+```
+## Run service
+Spawn API at :8080 and DB at :5432
+```bash
+    $ docker compose up
 ```
 ## REST API
 The REST API Methods to the above app is described below.
