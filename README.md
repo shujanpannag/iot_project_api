@@ -2,8 +2,8 @@
 This is a REST API built for IOT project using Golang, Gin and Gorm.
 ## Requirements
 - Golang
-- Go Gin
-- Gorm
+- [Go Gin](github.com/gin-gonic/gin)
+- [Gorm](gorm.io/gorm)
 ## Environment variables
 - HOST : Hostname
 - DBPORT : PostgreSQl Server Port
@@ -26,42 +26,42 @@ This is a REST API built for IOT project using Golang, Gin and Gorm.
 The REST API Methods to the above app is described below.
 ### Node Log
 `GET /v0/nodelog/:date`
-``` 
+```bash
     curl -i -H 'Content-Type: application/json' http://localhost:8080/v0/nodelog/2000-06-28
 ```
 `POST /v0/nodelog/`
-``` 
+```bash
     curl -i -H 'Content-Type: application/json' -d '{"relname": " " , "ipaddr": " ", "datetime": " "}' http://localhost:8080/v0/nodelog/
 ```
 
 ### User Log
 `GET /v0/userrel/:rel`
 
-``` 
+```bash
     curl -i -H 'Content-Type: application/json' http://localhost:8080/v0/nodelog/name
  ```
 
 `POST /v0/userrel/`
 
-``` 
+```bash
     curl -i -H 'Content-Type: application/json' -d '{"name": " ", "rel": " ", "email": " "}' http://localhost:8080/v0/userrel
 ```
 
 `PUT /v0/userrel/:name`
 
- ``` 
+ ```bash 
     curl -i -H 'Content-Type: application/json' -d '{"name": " ", "rel": " ", "email": " "}' http://localhost:8080/v0/name
 ```
     
 `POST /v0/userrel/:name`
 
-``` 
+```bash 
     curl -i -H 'Content-Type: application/json' http://localhost:8080/v0/name
 ```
 
 ### Server Log
 `GET /v0/getlog`
 
-``` 
+```bash 
     curl http://localhost:8080/v0/getlog
 ```
