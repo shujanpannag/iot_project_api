@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	// gin.SetMode(gin.ReleaseMode)
+	gin.SetMode(gin.ReleaseMode)
 
 	// A router without any middleware
 	r := gin.New()
