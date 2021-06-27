@@ -13,16 +13,6 @@ RUN apk update && apk upgrade
 
 COPY --from=gobuilder /app/iot_api  /iot_api
 
-# ENV HOST="db_server" 
-# ENV DBPORT="5432"
-# ENV DBUSER="postgres"
-# ENV DBNAME="iot"
-# ENV DBPASSWORD="postgres"
-# ENV EMAIL_ADDR=""
-# ENV EMAIL_PSWD=""
-# ENV EMAIL_HOST="smtp.gmail.com"
-# ENV EMAIL_PORT="587"
-
 EXPOSE 8080
 
-WORKDIR /
+CMD [ "./iot_api" ]

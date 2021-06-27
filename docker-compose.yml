@@ -1,0 +1,35 @@
+version: "3"
+
+services: 
+    pg_db:
+        image: postgres
+        volumes:
+            - /Users/shujanpannag/Downloads/pgdata:/var/lib/postgresql/data
+        networks: 
+            - ge_server_net
+        environment:
+            - POSTGRES_DB=iot
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        networks: 
+            - ge_server_net
+        ports:
+            - "5432:5432"
+
+    app:
+        build: .    
+        env_file: .env
+        networks: 
+            - ge_server_net
+        ports:
+            - "8080:8080"
+        depends_on:
+            - pg_db
+        command: ["./iot_api"]
+
+
+networks: 
+    ge_server_net:
+        name: geserver_net
+        driver: bridge
+        
