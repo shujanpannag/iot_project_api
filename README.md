@@ -15,11 +15,11 @@ This is a REST API built for IOT project using Golang, Gin and Gorm.
 - EMAIL_HOST : SMTP Host
 - EMAIL_PORT : SMTP Port
 ## Install
-```
+```bash
     $ go build
 ```
 ## Run the app
-```
+```bash
     $ go run cmd/main.go
 ```
 ## REST API
