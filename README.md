@@ -58,7 +58,7 @@ The REST API Methods to the above app is described below.
     curl -i -H 'Content-Type: application/json' -d '{"name": " ", "rel": " ", "email": " "}' http://localhost:8080/v0/name
 ```
     
-`POST /v0/userrel/:name`
+`DELETE /v0/userrel/:name`
 
 ```bash 
     curl -i -H 'Content-Type: application/json' http://localhost:8080/v0/name
