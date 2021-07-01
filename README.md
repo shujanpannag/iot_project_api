@@ -1,4 +1,5 @@
 # IOT PROJECT API
+[![forthebadge](https://forthebadge.com/images/badges/made-with-go.svg)](https://forthebadge.com)
 This is a REST API built for IOT project using Golang, Gin and Gorm.
 ## Requirements
 - Golang
