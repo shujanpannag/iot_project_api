@@ -5,15 +5,15 @@ This is a REST API built for IOT project using Golang, Gin and Gorm.
 - [Go Gin](github.com/gin-gonic/gin)
 - [Gorm](gorm.io/gorm)
 ## Environment variables (.env)
-     - HOST : Hostname
-     - DBPORT : PostgreSQL Server Port
-     - DBUSER : Database User Name
-     - DBNAME : Database Name
-     - DBPASSWORD : Database Password
-     - EMAIL_ADDR : From Email
-     - EMAIL_PSWD : From Email Password
-     - EMAIL_HOST : SMTP Host
-     - EMAIL_PORT : SMTP Port
+     HOST=<Hostname>
+     DBPORT=<PostgreSQL Server Port>
+     DBUSER=<Database User Name>
+     DBNAME=<Database Name>
+     DBPASSWORD=<Database Password>
+     EMAIL_ADDR=<From Email>
+     EMAIL_PSWD=<From Email Password>
+     EMAIL_HOST=<SMTP Host>
+     EMAIL_PORT=<SMTP Port>
 ## Build app binary
 ```bash
     $ go build -ldflags="-w -s" -o iot_api cmd/main.go
