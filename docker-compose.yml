@@ -11,8 +11,6 @@ services:
             - POSTGRES_DB=iot
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=postgres
-        networks: 
-            - ge_server_net
         ports:
             - "5432:5432"
 
